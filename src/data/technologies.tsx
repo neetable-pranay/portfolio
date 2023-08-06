@@ -3,6 +3,7 @@ import CSharpIcon from '@/assets/svgr/CSharpIcon';
 import ChakraUIIcon from '@/assets/svgr/ChakraUIIcon';
 import CypressIcon from '@/assets/svgr/CypressIcon';
 import DockerIcon from '@/assets/svgr/DockerIcon';
+import FigmaIcon from '@/assets/svgr/FigmaIcon';
 import FirebaseIcon from '@/assets/svgr/FirebaseIcon';
 import HTML5Icon from '@/assets/svgr/HTML5Icon';
 import JavaScriptIcon from '@/assets/svgr/JavaScriptIcon';
@@ -85,5 +86,9 @@ export const technologies: { [key: string]: Technology } = {
 	'Docker': {
 		icon: <DockerIcon />,
 		bgColor: 'bg-sky-500/20',
+	},
+	'Figma': {
+		icon: <FigmaIcon />,
+		bgColor: 'bg-pink-500/20',
 	},
 };

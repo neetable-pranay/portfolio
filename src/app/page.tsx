@@ -3,7 +3,7 @@ import Technologies from '@/components/Technologies';
 
 export default function Home() {
 	return (
-		<main className="min-h-screen min-w-screen flex flex-col px-4 pb-20">
+		<main className="min-h-screen min-w-screen flex flex-col pb-20">
 			<Hero />
 			<Technologies />
 		</main>

@@ -15,13 +15,14 @@ import ReduxIcon from '@/assets/svgr/ReduxIcon';
 import SupabaseIcon from '@/assets/svgr/SupabaseIcon';
 import TailwindIcon from '@/assets/svgr/TailwindIcon';
 import TypeScriptIcon from '@/assets/svgr/TypeScriptIcon';
+import ViteIcon from '@/assets/svgr/ViteIcon';
 import { Technology } from '@/types';
 
 export const technologies: { [key: string]: Technology } = {
 	'JavaScript': {
 		icon: <JavaScriptIcon />,
-		bgColor: 'bg-amber-400/20',
-		color: 'text-amber-100',
+		bgColor: 'bg-yellow-400/20',
+		color: 'text-yellow-100',
 	},
 	'TypeScript': {
 		icon: <TypeScriptIcon />,
@@ -42,6 +43,11 @@ export const technologies: { [key: string]: Technology } = {
 		icon: <CSS3Icon />,
 		bgColor: 'bg-cyan-500/20',
 		color: 'text-cyan-100',
+	},
+	'Vite': {
+		icon: <ViteIcon />,
+		bgColor: 'bg-purple-500/20',
+		color: 'text-purple-100',
 	},
 	'React': {
 		icon: <ReactIcon />,
@@ -85,8 +91,8 @@ export const technologies: { [key: string]: Technology } = {
 	},
 	'Cypress': {
 		icon: <CypressIcon />,
-		bgColor: 'bg-cyan-500/20',
-		color: 'text-cyan-100',
+		bgColor: 'bg-green-500/20',
+		color: 'text-green-100',
 	},
 	'Prisma': {
 		icon: <PrismaIcon />,
@@ -103,6 +109,30 @@ export const technologies: { [key: string]: Technology } = {
 		bgColor: 'bg-pink-500/20',
 		color: 'text-pink-100',
 	},
+	'Netlify': {
+		bgColor: 'bg-teal-500/20',
+		color: 'text-teal-100',
+	},
+	'Recoil': {
+		bgColor: 'bg-sky-500/20',
+		color: 'text-sky-100',
+	},
+	'Zustand': {
+		bgColor: 'bg-gray-500/20',
+		color: 'text-gray-100',
+	},
+	'NextAuth.js': {
+		bgColor: 'bg-cyan-500/20',
+		color: 'text-cyan-100',
+	},
+	'React Email': {
+		bgColor: 'bg-sky-500/20',
+		color: 'text-sky-100',
+	},
+	'React Hook Form': {
+		bgColor: 'bg-pink-500/20',
+		color: 'text-pink-100',
+	},
 };
 
 export const mainTechnologies = [
@@ -111,6 +141,7 @@ export const mainTechnologies = [
 	'C#',
 	'HTML',
 	'CSS',
+	'Vite',
 	'React',
 	'Redux Toolkit',
 	'MUI',

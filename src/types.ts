@@ -9,7 +9,7 @@ export type Technology = {
 export type PersonalProject = {
 	name: string;
 	description: string;
-	stack: Technology[];
+	stack: string[];
 	images: string[];
 	githubLink?: string;
 	previewLink?: string;

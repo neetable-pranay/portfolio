@@ -18,7 +18,7 @@ const About = () => {
 					{mainTechnologies.map(
 						x =>
 							Boolean(technologies[x]) && (
-								<div key={x} className="flex items-center gap-4 p-3 rounded-md  bg-gradient-to-r from-slate-800 to-purple-900/10">
+								<div key={x} className="flex items-center gap-4 p-3 rounded-md bg-gradient-to-r from-slate-800 to-purple-900/10">
 									<span className={`[&>svg]:w-5 p-2 rounded-lg ${technologies[x].bgColor}`}>{technologies[x].icon}</span>
 									<span className="text-slate-200 text-md">{x}</span>
 								</div>

@@ -4,6 +4,8 @@ import Image from 'next/image';
 import { ExternalLink, Github } from 'lucide-react';
 import Tooltip from '../ui/custom-tooltip';
 import { PersonalProject } from '@/types';
+import { technologies } from '@/data/technologies';
+import ChakraUIIcon from '@/assets/svgr/ChakraUIIcon';
 
 type Props = {
 	project: PersonalProject;
@@ -18,6 +20,16 @@ const ProjectCard = ({ project }: Props) => {
 			<CardContent>
 				<CardTitle className="text-slate-200">{project.name}</CardTitle>
 				<CardDescription className="text-slate-400 mt-4">{project.description}</CardDescription>
+				<div className="mt-4 inline-flex flex-wrap gap-1">
+					{project.stack.map(
+						x =>
+							Boolean(technologies[x]) && (
+								<span key={x} className={`${technologies[x].bgColor} ${technologies[x].color} text-xs p-1 rounded-md`}>
+									{x}
+								</span>
+							)
+					)}
+				</div>
 			</CardContent>
 			<CardFooter className="flex justify-end gap-2 mt-auto">
 				{project.githubLink && (

@@ -1,11 +1,10 @@
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '../ui/button';
-import Image from 'next/image';
 import { ExternalLink, Github } from 'lucide-react';
 import Tooltip from '../ui/custom-tooltip';
 import { PersonalProject } from '@/types';
 import { technologies } from '@/data/technologies';
-import ChakraUIIcon from '@/assets/svgr/ChakraUIIcon';
+import Carousel from '../ui/carousel';
 
 type Props = {
 	project: PersonalProject;
@@ -14,8 +13,8 @@ type Props = {
 const ProjectCard = ({ project }: Props) => {
 	return (
 		<Card className="w-full max-w-full rounded-xl bg-slate-950/50 border-slate-800 flex flex-col">
-			<CardHeader className="p-0 pb-8">
-				<Image src={project.images[0]} width={720} height={480} alt="preview" className="rounded-t-xl" />
+			<CardHeader className="p-0 pb-8 rounded-t-xl overflow-hidden">
+				<Carousel images={project.images} imgWidth={720} imgHeight={480}></Carousel>
 			</CardHeader>
 			<CardContent>
 				<CardTitle className="text-slate-200">{project.name}</CardTitle>

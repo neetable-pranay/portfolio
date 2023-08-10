@@ -13,10 +13,10 @@ type Props = {
 const ProjectCard = ({ project }: Props) => {
 	return (
 		<Card className="w-full max-w-full rounded-xl bg-slate-950/50 border-slate-800 flex flex-col">
-			<CardHeader className="p-0 pb-8 rounded-t-xl overflow-hidden">
-				<Carousel images={project.images} imgWidth={720} imgHeight={480}></Carousel>
+			<CardHeader className="p-0 rounded-t-xl overflow-hidden aspect-[2/1]">
+				<Carousel images={project.images} imgWidth={1000} imgHeight={500}></Carousel>
 			</CardHeader>
-			<CardContent>
+			<CardContent className='pt-8'>
 				<CardTitle className="text-slate-200">{project.name}</CardTitle>
 				<CardDescription className="text-slate-400 mt-4">{project.description}</CardDescription>
 				<div className="mt-4 inline-flex flex-wrap gap-1">

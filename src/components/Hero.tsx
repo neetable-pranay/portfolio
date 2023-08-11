@@ -14,11 +14,9 @@ const Hero = () => {
 			<div className="my-auto z-10 max-w-screen-xl w-full mx-auto ">
 				<span className="text-slate-400 text-3xl font-semibold block mb-4">Hey there! 👋</span>
 				<h1 className="text-slate-50 text-6xl font-bold mb-4">
-					I&apos;m <span className="text-violet-500">Name</span>
+					I&apos;m <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-500 to-purple-500">Miguel</span>
 				</h1>
-				<h2 className="text-slate-300 font-semibold text-3xl max-w-lg">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id tortor massa.
-				</h2>
+				<h2 className="text-slate-300 font-semibold text-3xl max-w-lg">Web developer based in Colombia</h2>
 			</div>
 		</section>
 	);

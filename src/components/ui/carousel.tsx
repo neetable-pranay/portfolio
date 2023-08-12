@@ -53,7 +53,7 @@ const Carousel = ({ images, imgWidth, imgHeight }: Props) => {
 					size="icon"
 					className="absolute bottom-1/2 left-1 translate-y-1/2 rounded-full bg-white/70 p-0 w-8 h-8 shadow-md hidden md:flex"
 				>
-					<ChevronLeft className="text-slate-300 text-black/50" />
+					<ChevronLeft className="text-black/30" />
 				</Button>
 			)}
 			{selected < images.length - 1 && (
@@ -63,7 +63,7 @@ const Carousel = ({ images, imgWidth, imgHeight }: Props) => {
 					size="icon"
 					className="absolute bottom-1/2 right-1 translate-y-1/2 rounded-full bg-white/70 p-0 w-8 h-8 shadow-md hidden md:flex"
 				>
-					<ChevronRight className="text-slate-300 text-black/50" />
+					<ChevronRight className="text-black/30" />
 				</Button>
 			)}
 			<div className="flex gap-1 absolute bottom-4 right-1/2 translate-x-1/2 bg-black/20 p-1 rounded-full">

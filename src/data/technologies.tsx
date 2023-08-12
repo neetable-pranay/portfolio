@@ -10,15 +10,46 @@ import JavaScriptIcon from '@/assets/svgr/JavaScriptIcon';
 import MUIIcon from '@/assets/svgr/MUIIcon';
 import NextjsIcon from '@/assets/svgr/NextjsIcon';
 import PrismaIcon from '@/assets/svgr/PrismaIcon';
+import PythonIcon from '@/assets/svgr/PythonIcon';
 import ReactIcon from '@/assets/svgr/ReactIcon';
 import ReduxIcon from '@/assets/svgr/ReduxIcon';
+import SQLIcon from '@/assets/svgr/SQLIcon';
 import SupabaseIcon from '@/assets/svgr/SupabaseIcon';
 import TailwindIcon from '@/assets/svgr/TailwindIcon';
 import TypeScriptIcon from '@/assets/svgr/TypeScriptIcon';
 import ViteIcon from '@/assets/svgr/ViteIcon';
 import { Technology } from '@/types';
 
-export const technologies: { [key: string]: Technology } = {
+export const technologiesList = [
+	'JavaScript',
+	'TypeScript',
+	'C#',
+	'Python',
+	'HTML',
+	'CSS',
+	'Vite',
+	'React',
+	'Redux Toolkit',
+	'MUI',
+	'Chakra UI',
+	'Tailwind CSS',
+	'Next.js',
+	'Firebase',
+	'Supabase',
+	'Cypress',
+	'Prisma',
+	'Docker',
+	'Figma',
+	'Netlify',
+	'Recoil',
+	'Zustand',
+	'NextAuth.js',
+	'React Email',
+	'React Hook Form',
+	'SQL',
+] as const;
+
+export const technologies: { [key in (typeof technologiesList)[number]]: Technology } = {
 	'JavaScript': {
 		icon: <JavaScriptIcon />,
 		bgColor: 'bg-yellow-400/20',
@@ -33,6 +64,11 @@ export const technologies: { [key: string]: Technology } = {
 		icon: <CSharpIcon />,
 		bgColor: 'bg-purple-500/20',
 		color: 'text-purple-100',
+	},
+	'Python': {
+		icon: <PythonIcon />,
+		bgColor: 'bg-yellow-500/20',
+		color: 'text-yellow-100',
 	},
 	'HTML': {
 		icon: <HTML5Icon />,
@@ -133,25 +169,16 @@ export const technologies: { [key: string]: Technology } = {
 		bgColor: 'bg-pink-500/20',
 		color: 'text-pink-100',
 	},
+	'SQL': {
+		icon: <SQLIcon />,
+		bgColor: 'bg-green-500/20',
+		color: 'text-green-100',
+	},
 };
 
-export const mainTechnologies = [
-	'JavaScript',
-	'TypeScript',
-	'C#',
-	'HTML',
-	'CSS',
-	'Vite',
-	'React',
-	'Redux Toolkit',
-	'MUI',
-	'Chakra UI',
-	'Tailwind CSS',
-	'Next.js',
-	'Firebase',
-	'Supabase',
-	'Cypress',
-	'Prisma',
-	'Docker',
-	'Figma',
-];
+export const mainTechnologies: { [key: string]: (typeof technologiesList)[number][] } = {
+	'Front-end': ['HTML', 'CSS', 'React', 'Next.js', 'Vite', 'Redux Toolkit', 'MUI', 'Tailwind CSS'],
+	'Back-end': ['Prisma', 'Supabase', 'Firebase', 'SQL'],
+	'Languages': ['JavaScript', 'TypeScript', 'C#', 'Python'],
+	'Other': ['Cypress', 'Docker', 'Figma'],
+};

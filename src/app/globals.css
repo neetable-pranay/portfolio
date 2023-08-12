@@ -110,3 +110,7 @@
 	-ms-overflow-style: none; /* IE and Edge */
 	scrollbar-width: none; /* Firefox */
 }
+
+*::selection {
+	background-color: #7e22ce99;
+}

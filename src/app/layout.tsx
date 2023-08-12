@@ -6,7 +6,7 @@ import { Noto_Sans_Mono } from 'next/font/google';
 const notoSansMono = Noto_Sans_Mono({ subsets: ['latin'], weight: ['100', '200', '300', '400', '500', '700', '800'] });
 
 export const metadata: Metadata = {
-	title: 'Miguel Lerma | Web developer',
+	title: 'Miguel Lerma | Web Developer',
 	description: "Mler's developer portfolio",
 };
 

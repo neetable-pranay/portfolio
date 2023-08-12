@@ -18,7 +18,7 @@ import SupabaseIcon from '@/assets/svgr/SupabaseIcon';
 import TailwindIcon from '@/assets/svgr/TailwindIcon';
 import TypeScriptIcon from '@/assets/svgr/TypeScriptIcon';
 import ViteIcon from '@/assets/svgr/ViteIcon';
-import { Technology } from '@/types';
+import { TechnologyData } from '@/types';
 
 export const technologiesList = [
 	'JavaScript',
@@ -49,7 +49,7 @@ export const technologiesList = [
 	'SQL',
 ] as const;
 
-export const technologies: { [key in (typeof technologiesList)[number]]: Technology } = {
+export const technologies: { [key in (typeof technologiesList)[number]]: TechnologyData } = {
 	'JavaScript': {
 		icon: <JavaScriptIcon />,
 		bgColor: 'bg-yellow-400/20',

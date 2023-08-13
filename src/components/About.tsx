@@ -3,7 +3,7 @@ import Subtitle from './Subtitle';
 
 const About = () => {
 	return (
-		<section className="w-full px-4 my-16">
+		<section className="w-full px-4 mb-16">
 			<div className="mx-auto max-w-screen-xl w-full ">
 				<Subtitle text="Technologies" />
 				<div className="flex flex-col">

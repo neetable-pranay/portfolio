@@ -3,7 +3,7 @@ import { Button } from './ui/button';
 
 const Footer = () => {
 	return (
-		<footer className="flex px-5 pt-20 pb-36 bg-slate-950">
+		<footer className="flex px-5 pt-16 pb-32 bg-slate-950">
 			<div className="max-w-screen-xl mx-auto w-full text-slate-500 text-sm text-center">
 				<div className="mb-4  gap-4">
 					<a href="https://linkedin.com/" target="_blank" className="mr-4">

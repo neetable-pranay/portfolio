@@ -9,7 +9,7 @@ const Header = () => {
 				<span className="text-base text-slate-200 font-black">mler.dev</span>
 				<nav className="ml-auto flex gap-2">
 					<Tooltip title="My LinkedIn">
-						<a href="https://www.linkedin.com/" target="_blank">
+						<a href="https://www.linkedin.com/in/miguel-l-302389249" target="_blank">
 							<Button variant="ghost" size="icon" className="hover:bg-black/30" tabIndex={-1}>
 								<Linkedin className="text-slate-300" />
 							</Button>

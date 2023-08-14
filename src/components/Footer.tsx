@@ -6,7 +6,7 @@ const Footer = () => {
 		<footer className="flex px-5 pt-16 pb-32 bg-slate-950">
 			<div className="max-w-screen-xl mx-auto w-full text-slate-500 text-sm text-center">
 				<div className="mb-4  gap-4">
-					<a href="https://linkedin.com/" target="_blank" className="mr-4">
+					<a href="https://www.linkedin.com/in/miguel-l-302389249" target="_blank" className="mr-4">
 						<Button size="icon" tabIndex={-1}>
 							<Linkedin />
 						</Button>

@@ -21,6 +21,18 @@ export const projects: PersonalProject[] = [
 		previewLink: 'https://triviatime.vercel.app/',
 	},
 	{
+		name: 'YuzuFlow',
+		description: 'A portable Yuzu Emulator version manager for Windows.',
+		images: [
+			'https://raw.githubusercontent.com/m-ler/yuzuflow/main/.github/assets/app-banner.png',
+			'/img/projects/yuzuflow/1.png',
+			'/img/projects/yuzuflow/2.png',
+			'/img/projects/yuzuflow/3.png',
+		],
+		stack: ['TypeScript', 'Electron', 'Express', 'AWS', 'React', 'Vite', 'Zustand', 'Tailwind CSS'],
+		githubLink: 'https://github.com/m-ler/yuzuflow',
+	},
+	{
 		name: 'Candy Tiles',
 		description: 'A match-three video game, where players can create and share their own levels with the community.',
 		images: [

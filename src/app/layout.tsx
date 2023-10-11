@@ -7,7 +7,7 @@ import Footer from '@/components/Footer';
 const notoSansMono = Noto_Sans_Mono({ subsets: ['latin'], weight: ['100', '200', '300', '400', '500', '700', '800'] });
 
 export const metadata: Metadata = {
-	title: 'Miguel Lerma | Web Developer',
+	title: 'Miguel Lerma | Software Developer',
 	description: "Mler's developer portfolio",
 };
 

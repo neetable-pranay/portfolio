@@ -1,8 +1,11 @@
+import AWSIcon from '@/assets/svgr/AWSIcon';
 import CSS3Icon from '@/assets/svgr/CSS3Icon';
 import CSharpIcon from '@/assets/svgr/CSharpIcon';
 import ChakraUIIcon from '@/assets/svgr/ChakraUIIcon';
 import CypressIcon from '@/assets/svgr/CypressIcon';
 import DockerIcon from '@/assets/svgr/DockerIcon';
+import ElectronIcon from '@/assets/svgr/ElectronIcon';
+import ExpressIcon from '@/assets/svgr/ExpressIcon';
 import FigmaIcon from '@/assets/svgr/FigmaIcon';
 import FirebaseIcon from '@/assets/svgr/FirebaseIcon';
 import HTML5Icon from '@/assets/svgr/HTML5Icon';
@@ -47,6 +50,9 @@ export const technologiesList = [
 	'React Email',
 	'React Hook Form',
 	'SQL',
+	'Electron',
+	'AWS',
+	'Express',
 ] as const;
 
 export const technologies: { [key in (typeof technologiesList)[number]]: TechnologyData } = {
@@ -174,11 +180,26 @@ export const technologies: { [key in (typeof technologiesList)[number]]: Technol
 		bgColor: 'bg-green-500/20',
 		color: 'text-green-100',
 	},
+	'Electron': {
+		icon: <ElectronIcon />,
+		bgColor: 'bg-cyan-500/20',
+		color: 'text-cyan-100',
+	},
+	'AWS': {
+		icon: <AWSIcon />,
+		bgColor: 'bg-orange-500/20',
+		color: 'text-orange-200',
+	},
+	'Express': {
+		icon: <ExpressIcon />,
+		bgColor: 'bg-green-500/20',
+		color: 'text-green-100',
+	},
 };
 
 export const mainTechnologies: { [key: string]: (typeof technologiesList)[number][] } = {
 	'Front-end': ['HTML', 'CSS', 'React', 'Next.js', 'Vite', 'Redux Toolkit', 'MUI', 'Tailwind CSS'],
-	'Back-end': ['Prisma', 'Supabase', 'Firebase', 'SQL'],
+	'Back-end': ['Express', 'Prisma', 'Supabase', 'Firebase', 'SQL'],
 	'Languages': ['JavaScript', 'TypeScript', 'C#', 'Python'],
-	'Other': ['Cypress', 'Docker', 'Figma'],
+	'Other': ['Electron', 'AWS', 'Cypress', 'Docker', 'Figma'],
 };

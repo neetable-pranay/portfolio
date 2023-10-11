@@ -9,6 +9,7 @@ const Hero = () => {
 				width={1920}
 				height={1080}
 				className="absolute inset-0 w-full h-full object-cover  opacity-80"
+				priority
 			/>
 
 			<div className="my-auto z-10 max-w-screen-xl w-full mx-auto flex flex-col lg:flex-row justify-between items-center gap-20">

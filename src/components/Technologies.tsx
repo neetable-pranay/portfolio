@@ -1,7 +1,7 @@
 import { mainTechnologies, technologies } from '@/data/technologies';
 import Subtitle from './Subtitle';
 
-const About = () => {
+const Technologies = () => {
 	return (
 		<section className="w-full px-4 mb-16">
 			<div className="mx-auto max-w-screen-xl w-full ">
@@ -31,4 +31,4 @@ const About = () => {
 	);
 };
 
-export default About;
+export default Technologies;

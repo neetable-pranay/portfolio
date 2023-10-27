@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const Hero = () => {
 	return (
-		<section className="min-h-[calc(100vh-7rem)] pt-12 lg:pt-0 flex flex-col w-full mt-[4.5rem] relative px-4 z-0 mb-10">
+		<section className="min-h-[calc(100vh-7rem)] pt-12 lg:pt-0 flex flex-col w-full mt-[4.5rem] relative px-4 z-0 mb-10 overflow-hidden">
 			<Image
 				src="/img/bg-pattern.svg"
 				alt="illustration"

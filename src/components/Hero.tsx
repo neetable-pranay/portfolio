@@ -8,17 +8,17 @@ const Hero = () => {
 				alt="illustration"
 				width={1920}
 				height={1080}
-				className="absolute inset-0 w-full h-full object-cover  opacity-80"
+				className="absolute inset-0 object-cover w-full h-full opacity-80"
 				priority
 			/>
 
-			<div className="my-auto z-10 max-w-screen-xl w-full mx-auto flex flex-col lg:flex-row justify-between items-center gap-20">
+			<div className="z-10 flex flex-col items-center justify-between w-full max-w-screen-xl gap-20 mx-auto my-auto lg:flex-row">
 				<div>
-					<span className="text-slate-400 text-3xl font-semibold block mb-4">Hey there! 👋</span>
-					<h1 className="text-slate-50 text-6xl font-bold mb-4">
-						I&apos;m <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-500 to-purple-500">Miguel</span>
+					<span className="block mb-4 text-3xl font-semibold text-slate-400">Hey there! 👋</span>
+					<h1 className="mb-4 text-6xl font-bold text-slate-50">
+						I&apos;m <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-500 to-purple-500">Pranay</span>
 					</h1>
-					<h2 className="text-slate-300 font-semibold text-3xl max-w-lg">Web developer based in Colombia</h2>
+					<h2 className="max-w-lg text-3xl font-semibold text-slate-300">Software Engineer ||</h2>
 				</div>
 				<div className="w-[min(100%_,360px)] lg:w-[600px] animate-hero">
 					<Image src="/img/hero.png" alt="hero" width={650} height={848} className="h-auto lg:translate-x-[86px] lg:translate-y-[50px]" />

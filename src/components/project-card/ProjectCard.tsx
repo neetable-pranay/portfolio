@@ -12,14 +12,14 @@ type Props = {
 
 const ProjectCard = ({ project }: Props) => {
 	return (
-		<Card className="w-full max-w-full rounded-xl bg-slate-950/50 border-slate-800 flex flex-col">
+		<Card className="flex flex-col w-full max-w-full rounded-xl bg-slate-950/50 border-slate-800">
 			<CardHeader className="p-0 rounded-t-xl overflow-hidden aspect-[2/1]">
 				<Carousel images={project.images} imgWidth={1000} imgHeight={500}></Carousel>
 			</CardHeader>
 			<CardContent className='pt-8'>
 				<CardTitle className="text-slate-200">{project.name}</CardTitle>
-				<CardDescription className="text-slate-400 mt-4">{project.description}</CardDescription>
-				<div className="mt-4 inline-flex flex-wrap gap-1">
+				<CardDescription className="mt-4 text-slate-400">{project.description}</CardDescription>
+				<div className="inline-flex flex-wrap gap-1 mt-4">
 					{project.stack.map(
 						x =>
 							Boolean(technologies[x]) && (

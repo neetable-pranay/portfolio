@@ -34,7 +34,7 @@ const Carousel = ({ images, imgWidth, imgHeight }: Props) => {
 
 	return (
 		<div className="relative max-h-full">
-			<div ref={ref} className="w-full no-scrollbar overflow-auto snap-x snap-mandatory flex relative" onScroll={onScroll}>
+			<div ref={ref} className="relative flex w-full overflow-auto no-scrollbar snap-x snap-mandatory" onScroll={onScroll}>
 				{images.map((x, i) => (
 					<Image
 						key={i}
@@ -42,7 +42,7 @@ const Carousel = ({ images, imgWidth, imgHeight }: Props) => {
 						width={imgWidth}
 						height={imgHeight}
 						alt="preview"
-						className="w-full h-auto shrink-0 snap-start object-cover snap-always"
+						className="object-cover w-full h-auto shrink-0 snap-start snap-always"
 					/>
 				))}
 			</div>
@@ -51,7 +51,7 @@ const Carousel = ({ images, imgWidth, imgHeight }: Props) => {
 					onClick={() => slide('left')}
 					variant="ghost"
 					size="icon"
-					className="absolute bottom-1/2 left-1 translate-y-1/2 rounded-full bg-white/70 p-0 w-8 h-8 shadow-md hidden md:flex"
+					className="absolute hidden w-8 h-8 p-0 translate-y-1/2 rounded-full shadow-md bottom-1/2 left-1 bg-white/70 md:flex"
 				>
 					<ChevronLeft className="text-black/30" />
 				</Button>
@@ -61,12 +61,12 @@ const Carousel = ({ images, imgWidth, imgHeight }: Props) => {
 					onClick={() => slide('right')}
 					variant="ghost"
 					size="icon"
-					className="absolute bottom-1/2 right-1 translate-y-1/2 rounded-full bg-white/70 p-0 w-8 h-8 shadow-md hidden md:flex"
+					className="absolute hidden w-8 h-8 p-0 translate-y-1/2 rounded-full shadow-md bottom-1/2 right-1 bg-white/70 md:flex"
 				>
 					<ChevronRight className="text-black/30" />
 				</Button>
 			)}
-			<div className="flex gap-1 absolute bottom-4 right-1/2 translate-x-1/2 bg-black/20 p-1 rounded-full">
+			<div className="absolute flex gap-1 p-1 translate-x-1/2 rounded-full bottom-4 right-1/2 bg-black/20">
 				{images.length > 1 &&
 					images.map((x, i) => <span key={i} className={`w-1.5 h-1.5 bg-white rounded-full ${selected !== i && 'opacity-40'}`}></span>)}
 			</div>

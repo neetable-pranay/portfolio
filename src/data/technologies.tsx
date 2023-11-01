@@ -53,6 +53,8 @@ export const technologiesList = [
 	'Electron',
 	'AWS',
 	'Express',
+	'Bootstrap',
+	'Laravel'
 ] as const;
 
 export const technologies: { [key in (typeof technologiesList)[number]]: TechnologyData } = {
@@ -192,6 +194,14 @@ export const technologies: { [key in (typeof technologiesList)[number]]: Technol
 	},
 	'Express': {
 		icon: <ExpressIcon />,
+		bgColor: 'bg-green-500/20',
+		color: 'text-green-100',
+	},
+	'Bootstrap': {
+		bgColor: 'bg-green-500/20',
+		color: 'text-green-100',
+	},
+	'Laravel': {
 		bgColor: 'bg-green-500/20',
 		color: 'text-green-100',
 	},

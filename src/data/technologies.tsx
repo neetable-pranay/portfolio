@@ -21,6 +21,9 @@ import SupabaseIcon from '@/assets/svgr/SupabaseIcon';
 import TailwindIcon from '@/assets/svgr/TailwindIcon';
 import TypeScriptIcon from '@/assets/svgr/TypeScriptIcon';
 import ViteIcon from '@/assets/svgr/ViteIcon';
+import NodeJs from '@/assets/svgr/NodeJs';
+import Laravel from '@/assets/svgr/Laravel';
+import PHP from '@/assets/svgr/PHP';
 import { TechnologyData } from '@/types';
 
 export const technologiesList = [
@@ -54,7 +57,11 @@ export const technologiesList = [
 	'AWS',
 	'Express',
 	'Bootstrap',
-	'Laravel'
+	'Laravel',
+	'PHP',
+	'Node',
+	'AWS Amplify',
+	'GraphQL'
 ] as const;
 
 export const technologies: { [key in (typeof technologiesList)[number]]: TechnologyData } = {
@@ -202,6 +209,26 @@ export const technologies: { [key in (typeof technologiesList)[number]]: Technol
 		color: 'text-green-100',
 	},
 	'Laravel': {
+		icon: <Laravel />,
+		bgColor: 'bg-red-500/20',
+		color: 'text-red-100',
+	},
+	'PHP': {
+		icon: <PHP />,
+		bgColor: 'bg-green-500/20',
+		color: 'text-green-100',
+	},
+	'Node': {
+		icon: <NodeJs />,
+		bgColor: 'bg-green-500/20',
+		color: 'text-green-100',
+	},
+	'AWS Amplify': {
+		icon: <AWSIcon />,
+		bgColor: 'bg-green-500/20',
+		color: 'text-green-100',
+	},
+	'GraphQL': {
 		bgColor: 'bg-green-500/20',
 		color: 'text-green-100',
 	},
@@ -209,7 +236,6 @@ export const technologies: { [key in (typeof technologiesList)[number]]: Technol
 
 export const mainTechnologies: { [key: string]: (typeof technologiesList)[number][] } = {
 	'Front-end': ['HTML', 'CSS', 'React', 'Next.js', 'Vite', 'Redux Toolkit', 'MUI', 'Tailwind CSS'],
-	'Back-end': ['Express', 'Prisma', 'Supabase', 'Firebase', 'SQL'],
-	'Languages': ['JavaScript', 'TypeScript', 'C#', 'Python'],
-	'Other': ['Electron', 'AWS', 'Cypress', 'Docker', 'Figma'],
+	'Back-end': ['Node', 'Laravel', 'PHP', 'SQL', 'AWS Amplify'],
+	'Languages': ['JavaScript', 'TypeScript', 'PHP',],
 };

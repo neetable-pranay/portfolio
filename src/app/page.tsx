@@ -4,7 +4,7 @@ import Projects from '@/components/Projects';
 
 export default function Home() {
 	return (
-		<main className="min-h-screen min-w-screen flex flex-col pb-20">
+		<main className="flex flex-col min-h-screen pb-20 min-w-screen">
 			<Hero />
 			<Projects />
 			<Technologies />

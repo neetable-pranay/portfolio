@@ -19,6 +19,8 @@ const Hero = () => {
 						I&apos;m <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-500 to-purple-500">Pranay</span>
 					</h1>
 					<h2 className="max-w-lg text-3xl font-semibold text-slate-300">Software Engineer ||</h2>
+					<p className='mt-4 text-slate-300'>pranayisaiah@gmail.com</p>
+					<p className='text-slate-300'>+91 9916078754</p>
 				</div>
 				<div className="w-[min(100%_,360px)] lg:w-[600px] animate-hero">
 					<Image src="/img/hero.png" alt="hero" width={650} height={848} className="h-auto lg:translate-x-[86px] lg:translate-y-[50px]" />

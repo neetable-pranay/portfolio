@@ -13,7 +13,18 @@ export const projects: PersonalProject[] = [
 			'/img/projects/bgr/list.png',
 		],
 		stack: ['React','React Hook Form', 'JavaScript','Bootstrap',  'Redux Toolkit', 'AWS'],
-		previewLink: 'https://triviatime.vercel.app/',
+	},
+	{
+		name: 'Equidefi',
+		description:
+			'Equidefi is a groundbreaking software streamlining private offerings. My primary contribution focused on crafting the Investor Portal, a user-centric interface allowing seamless exploration and investment in diverse opportunities. Notably, I integrated Stripe payment functionality, ensuring secure and efficient transactions. The Investor Portal empowers users with transparent insights into offerings, fostering informed investment decisions. This platform not only revolutionizes private offering accessibility for investors but also equips issuers with tools for efficient creation and management. ',
+		images: [
+			'/img/projects/equidefi/equidefi1.png',
+			'/img/projects/equidefi/equidefi2.png',
+			'/img/projects/equidefi/equidefi3.png',
+		],
+		stack: ['React', 'JavaScript', 'Redux Toolkit','Bootstrap','AWS'],
+		previewLink: 'https://equidefi.com/',
 	},
 	{
 		name: 'WorldTradeX',

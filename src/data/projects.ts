@@ -13,7 +13,6 @@ export const projects: PersonalProject[] = [
 			'/img/projects/bgr/list.png',
 		],
 		stack: ['React','React Hook Form', 'JavaScript','Bootstrap',  'Redux Toolkit', 'AWS'],
-		githubLink: 'https://github.com/m-ler/trivia-time',
 		previewLink: 'https://triviatime.vercel.app/',
 	},
 	{
